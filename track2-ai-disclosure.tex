@@ -4,205 +4,165 @@
 %%   "Interrogating GenAI Augmentation for CHIworkers:
 %%    Strategies for Professional Autonomy and Accountability"
 %%
-%% Workshop website: https://haukecornell.github.io/chiwork-interrogating-aiwork-workshop-template/
+%% Workshop website: https://chiwork-ai.hauke.haus/
 %% Workshop day: June 22, 2026 — Linz, Austria
 %%
 %% INSTRUCTIONS
 %% ─────────────────────────────────────────────────────────────
-%% Track 2 is for industry professionals, practitioners, and
-%% researchers who want to share a reflexive account of GenAI
-%% use in their daily HCI work.
-%%
 %% A short paragraph is all that is required.
-%% This template provides a structured framework if you want to
-%% go deeper — use as much or as little as is useful to you.
+%% This template provides a structured framework if you want
+%% to go deeper — use as much or as little as you like.
 %%
-%% Format:
-%%   - 1 page, or a short paragraph — your choice
-%%   - No research contribution required
-%%   - Honesty and specificity valued over length
-%%   - Submit the PDF via the workshop Google Form (link on website)
-%%
-%% This template is optional. You may submit a plain PDF, a Word
-%% document, or any readable format.
+%% This template is optional. You may submit a plain PDF,
+%% a Word document, or any readable format.
 %% ─────────────────────────────────────────────────────────────
 
 \documentclass[sigconf]{acmart}
 
-%% Strip ACM rights block
 \settopmatter{printacmref=false}
 \renewcommand\footnotetextcopyrightpermission[1]{}
 \pagestyle{plain}
 
-%% Workshop conference metadata
 \acmConference[CHIWork '26]{CHIWork '26 Workshop: Interrogating GenAI Augmentation for CHIworkers}{June 22, 2026}{Linz, Austria}
 \acmYear{2026}
 
-%% ── Your disclosure metadata ──────────────────────────────────
-%% The title can describe your role or context, not your name.
-%% Pseudonymous submissions are acceptable for Track 2.
+%% ── Formatting helpers ────────────────────────────────────────
+\usepackage{xcolor}
+\definecolor{workshopaccent}{HTML}{6B2737}
+\usepackage{tikz}
+\newcommand{\sectionrule}{\vspace{0.3em}\noindent\textcolor{workshopaccent}{\rule{\linewidth}{0.4pt}}\vspace{0.3em}}
+\newcommand{\prompt}[1]{\vspace{0.5em}\noindent\textcolor{workshopaccent}{\small\sffamily #1}\vspace{0.3em}}
+\newcommand{\response}{\vspace{0.3em}\noindent\textit{[Your response here.]}\vspace{0.5em}}
 
+%% ── Your metadata ─────────────────────────────────────────────
 \title{AI Use Disclosure: [Your Role / Context / Field]}
 %% Examples:
 %%   "AI Use Disclosure: A UX Researcher at a Mid-Size Tech Company"
 %%   "AI Use Disclosure: PhD Student in HCI, Qualitative Methods Focus"
-%%   "AI Use Disclosure: Independent Interaction Designer"
 
 \author{Your Name}
 \affiliation{%
-  \institution{Your Institution or Company (or "Independent")}
+  \institution{Your Institution or Company}
   \city{City}
   \country{Country}}
 \email{your@email.com}
-%% Pseudonymous submissions: use a description in place of name/affiliation
+%% Pseudonymous submissions are welcome.
 
 %% ─────────────────────────────────────────────────────────────
 \begin{document}
 \maketitle
 
 %% ─────────────────────────────────────────────────────────────
-%% OPTION A: SHORT PARAGRAPH (minimum requirement)
+%% INTRO NOTE — Printed in the PDF for the reader's context
 %% ─────────────────────────────────────────────────────────────
-%% If you prefer brevity, replace everything below with a single
-%% honest paragraph describing your GenAI use in HCI work.
-%% The key questions: What do you use AI for? What feels right?
-%% What feels wrong? When do you stop?
+\begin{quote}
+\small\itshape
+This disclosure was submitted to the CHIWork 2026 workshop
+\emph{Interrogating GenAI Augmentation for CHIworkers}~\cite{sandhaus2026interrogating}.
+We ask: What do you use AI for? What feels right? What feels wrong?
+When do you stop? A short paragraph is enough; the framework below
+is there if you want to go deeper.
+\end{quote}
+
+\sectionrule
+
+%% ═════════════════════════════════════════════════════════════
+%% OPTION A — SHORT PARAGRAPH (minimum requirement)
+%% ═════════════════════════════════════════════════════════════
 %%
-%% Example:
+%% If you prefer brevity, delete everything below this point
+%% and write a single honest paragraph. Example:
 %%
 %% "I am a UX researcher at [company]. I use ChatGPT to help
-%%  draft interview guides and synthesize affinity diagrams. I
-%%  find it speeds up the boring parts, but I've noticed I rely
-%%  on its framing more than I'd like—my analysis increasingly
-%%  looks like its summaries. I've started blocking AI on days
+%%  draft interview guides and synthesize affinity diagrams.
+%%  It speeds up the routine parts, but I've noticed I rely
+%%  on its framing more than I'd like — my analysis increasingly
+%%  mirrors its summaries. I've started blocking AI on days
 %%  when I need to think slowly. The part I haven't resolved:
 %%  I don't tell participants their data touched an AI."
 %%
-%% ─────────────────────────────────────────────────────────────
-
-%% ─────────────────────────────────────────────────────────────
-%% OPTION B: STRUCTURED FRAMEWORK (use as much as is useful)
-%% ─────────────────────────────────────────────────────────────
+%% ═════════════════════════════════════════════════════════════
+%% OPTION B — STRUCTURED FRAMEWORK
+%% ═════════════════════════════════════════════════════════════
 
 \section*{About My Practice}
 
-Briefly describe your professional context: your role, the kind of
-HCI work you do (research, design, engineering, etc.), and your
-general relationship with AI tools.
-
+\prompt{Briefly: your role, the kind of HCI work you do, and your
+general relationship with AI tools.}
+\response
 
 %% ─────────────────────────────────────────────────────────────
-\section*{Part A — GenAI Across the HCI Work Cycle}
+\section*{Part A\enspace—\enspace GenAI Across the HCI Work Cycle}
 %% ─────────────────────────────────────────────────────────────
 
-For each phase below, briefly describe how you use (or deliberately
-avoid) GenAI tools. Skip phases that are not part of your work.
+\prompt{For each phase, describe how you use (or avoid) GenAI.
+Skip phases that aren't part of your work.}
 
 \paragraph{Planning \& Literature Review}
-(e.g., finding papers, summarizing research areas, brainstorming
-research questions)
-
-\vspace{0.5em}
-\noindent\textit{Your response here.}
-\vspace{0.75em}
+\textit{\small Finding papers, summarizing themes, brainstorming questions.}
+\response
 
 \paragraph{Prototyping \& Design}
-(e.g., wireframing, ``vibe coding,'' generating UI copy, asset
-creation, speculative design)
-
-\vspace{0.5em}
-\noindent\textit{Your response here.}
-\vspace{0.75em}
+\textit{\small Wireframing, ``vibe coding,'' generating UI copy, assets.}
+\response
 
 \paragraph{Data Collection \& Synthesis}
-(e.g., generating interview questions, coding transcripts, creating
-personas, affinity diagramming)
-
-\vspace{0.5em}
-\noindent\textit{Your response here.}
-\vspace{0.75em}
+\textit{\small Interview questions, transcript coding, persona creation.}
+\response
 
 \paragraph{Analysis \& Interpretation}
-(e.g., pattern recognition, quantitative analysis, qualitative
-coding, system development)
-
-\vspace{0.5em}
-\noindent\textit{Your response here.}
-\vspace{0.75em}
+\textit{\small Pattern recognition, quantitative analysis, system development.}
+\response
 
 \paragraph{Dissemination \& Communication}
-(e.g., manuscript drafting, slide creation, report writing,
-responding to reviewer comments)
-
-\vspace{0.5em}
-\noindent\textit{Your response here.}
-
+\textit{\small Manuscript drafting, slide creation, reviewer responses.}
+\response
 
 %% ─────────────────────────────────────────────────────────────
-\section*{Part B — Thematic Reflections}
+\section*{Part B\enspace—\enspace Thematic Reflections}
 %% ─────────────────────────────────────────────────────────────
 
-Answer the questions that feel most relevant to your experience.
-You do not need to answer all of them.
+\prompt{Answer the questions that feel most relevant.
+You do not need to answer all of them.}
 
 \paragraph{Agency and Originality}
 How do you maintain status as the primary ``arbiter'' of your work?
-Have you noticed shifts in your professional identity or sense of
-authorship when using AI?
-
-\vspace{0.5em}
-\noindent\textit{Your response here.}
-\vspace{0.75em}
+Have you noticed shifts in professional identity when using AI?
+\response
 
 \paragraph{Co-Thinking and Delegation}
 Which tasks have you delegated to AI, and which have you reclaimed
 for deep, unassisted work? What drove those choices?
-
-\vspace{0.5em}
-\noindent\textit{Your response here.}
-\vspace{0.75em}
+\response
 
 \paragraph{Empathy and Quality Integrity}
-Describe a specific moment where AI-driven speed felt at odds with
-the depth or care your work required. How did you respond?
-
-\vspace{0.5em}
-\noindent\textit{Your response here.}
-\vspace{0.75em}
+A specific moment where AI speed felt at odds with depth or care.
+How did you respond?
+\response
 
 \paragraph{Resistance and Re-imagining}
-Have you intentionally refused to use AI for ethical or professional
-reasons? What was the situation and your reasoning?
-
-\vspace{0.5em}
-\noindent\textit{Your response here.}
-\vspace{0.75em}
+Have you refused to use AI for ethical or professional reasons?
+What was the situation?
+\response
 
 \paragraph{Professional Policies and Boundaries}
-How do institutional norms, employer expectations, or your own
-values shape your AI use? When do you choose to \textbf{STOP}?
+How do institutional norms or your own values shape your AI use?
+When do you choose to \textbf{STOP}?
+\response
 
-\vspace{0.5em}
-\noindent\textit{Your response here.}
+\sectionrule
 
-
-%% ─────────────────────────────────────────────────────────────
-%% Optional: one thing you want to discuss at the workshop
 %% ─────────────────────────────────────────────────────────────
 \section*{What I Want to Bring to the Workshop}
+%% ─────────────────────────────────────────────────────────────
 
-Is there a specific tension, question, or practice you want to
-discuss with others? Name it here — this helps us form working
-groups around shared themes.
-
-\noindent\textit{Your response here.}
-
+\prompt{A tension, question, or practice you'd like to discuss.
+This helps us form working groups around shared themes.}
+\response
 
 %% ─────────────────────────────────────────────────────────────
 \bibliographystyle{ACM-Reference-Format}
 \bibliography{references}
-%% The workshop proposal is pre-populated in references.bib
-%% as \cite{sandhaus2026interrogating}. You may cite it if useful.
 %% ─────────────────────────────────────────────────────────────
 
 \end{document}
