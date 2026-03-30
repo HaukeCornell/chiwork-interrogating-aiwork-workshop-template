@@ -1,0 +1,174 @@
+%%
+%% Track 1 — Position Paper Template
+%% CHIWork 2026 Workshop:
+%%   "Interrogating GenAI Augmentation for CHIworkers:
+%%    Strategies for Professional Autonomy and Accountability"
+%%
+%% Workshop website: https://haukecornell.github.io/chiwork-interrogating-aiwork-workshop-template/
+%% Workshop day: June 22, 2026 — Linz, Austria
+%%
+%% INSTRUCTIONS
+%% ─────────────────────────────────────────────────────────────
+%% - Maximum 4 pages including references
+%% - Use this template as-is; do not change fonts, margins, or class options
+%% - After acceptance, submit to arXiv and add the arXiv ID to the
+%%   \workshopNote command below before your final upload
+%% - Submit the PDF via the workshop Google Form (link on website)
+%%
+%% TOPICS (position papers should engage with at least one):
+%%   • AI dependency & de-skilling in HCI work
+%%   • Accountability & ownership in AI-augmented workflows
+%%   • Ethical commitments, empathy, and co-thinking
+%%   • Responsible practice, disclosure, and professional boundaries
+%%   • Critique of specific AI tools in HCI/design/research contexts
+%% ─────────────────────────────────────────────────────────────
+
+\documentclass[sigconf]{acmart}
+
+%% Strip ACM rights block (not applicable for workshop arXiv papers)
+\settopmatter{printacmref=false}
+\renewcommand\footnotetextcopyrightpermission[1]{}
+\pagestyle{plain}
+
+%% Workshop conference metadata
+\acmConference[CHIWork '26]{CHIWork '26 Workshop: Interrogating GenAI Augmentation for CHIworkers}{June 22, 2026}{Linz, Austria}
+\acmYear{2026}
+
+%% ── Workshop identification note ──────────────────────────────
+%% This command prints a note identifying this as a workshop submission.
+%% Before uploading to arXiv, replace "arXiv:XXXX.XXXXX" with your ID.
+\newcommand{\workshopNote}{%
+  \begin{quote}
+    \small\itshape
+    This position paper is submitted to the CHIWork 2026 Workshop:
+    \emph{Interrogating GenAI Augmentation for CHIworkers:
+    Strategies for Professional Autonomy and Accountability}
+    (June 22, 2026, Linz, Austria).
+    Workshop proposal: \cite{sandhaus2026interrogating}.
+    %% Uncomment and fill in after arXiv upload:
+    %% arXiv preprint: arXiv:XXXX.XXXXX
+  \end{quote}%
+}
+
+%% ── Your paper metadata ───────────────────────────────────────
+\title{Your Position Paper Title}
+
+%% Repeat \author{} block for each author
+\author{First Author}
+\affiliation{%
+  \institution{Your Institution}
+  \city{City}
+  \country{Country}}
+\email{author@example.com}
+
+\author{Second Author}
+\affiliation{%
+  \institution{Second Institution}
+  \city{City}
+  \country{Country}}
+\email{author2@example.com}
+
+\renewcommand{\shortauthors}{Author et al.}
+
+%% ── Abstract (max ~150 words) ────────────────────────────────
+\begin{abstract}
+  Replace this with your abstract. Briefly state your position,
+  the problem or tension you address, and your key argument or
+  contribution. Aim for 100--150 words.
+\end{abstract}
+
+%% ── Keywords ─────────────────────────────────────────────────
+\keywords{Generative AI, accountability, HCI practice, professional ethics}
+%% Add or replace with your own keywords
+
+%% ─────────────────────────────────────────────────────────────
+\begin{document}
+\maketitle
+
+%% Print the workshop identification note (required)
+\workshopNote
+
+%% ─────────────────────────────────────────────────────────────
+\section{Introduction}
+%% ─────────────────────────────────────────────────────────────
+
+State the problem or tension your paper addresses. What aspect of
+GenAI use in HCI workflows concerns you? What is the accountability
+or autonomy gap you have observed in your own practice or research?
+
+Briefly introduce your position and the main argument you will make.
+This section should be no more than half a page.
+
+
+%% ─────────────────────────────────────────────────────────────
+\section{Background and Motivation}
+%% ─────────────────────────────────────────────────────────────
+
+Situate your position in relevant prior work. You do not need a
+comprehensive literature review—this is a position paper, not a full
+paper. Cite the work that most directly motivates your argument.
+
+You might engage with themes from the workshop such as:
+\begin{itemize}
+  \item AI dependency and de-skilling \cite{sandhaus2026interrogating}
+  \item The accountability gap in AI-augmented workflows
+  \item Tensions between efficiency and deep work
+  \item Soft resistance and alternative practices
+\end{itemize}
+
+
+%% ─────────────────────────────────────────────────────────────
+\section{Position / Argument}
+%% ─────────────────────────────────────────────────────────────
+
+State your position clearly. This is the core of the paper.
+
+You may structure this section as:
+\begin{itemize}
+  \item A claim about responsible/irresponsible AI use in a specific context
+  \item A critique of a current norm or tool
+  \item A proposed framework, heuristic, or practice
+  \item An empirical observation from your own work or research
+\end{itemize}
+
+Be concrete. Use specific examples from practice—what did you observe,
+experience, or study? What makes it an instance of the themes
+this workshop addresses?
+
+
+%% ─────────────────────────────────────────────────────────────
+\section{Implications and Discussion Points}
+%% ─────────────────────────────────────────────────────────────
+
+What should the community do with your position? What open questions
+or tensions does it surface? What would you like to discuss or debate
+at the workshop?
+
+Briefly sketch what a ``responsible practice'' or code of conduct
+might look like in light of your argument.
+
+
+%% ─────────────────────────────────────────────────────────────
+%% AI Use Statement (required)
+%% ─────────────────────────────────────────────────────────────
+\begin{acks}
+  \textbf{AI Use Statement:} [Required.] Describe how, if at all,
+  you used Generative AI tools in writing this paper. Be specific:
+  which tools, for which tasks (brainstorming, drafting, editing,
+  figure generation, literature search, etc.), and what oversight
+  you exercised. If you did not use AI tools, state that explicitly.
+
+  Example: ``We used [Tool] for [task]. All claims, analysis, and
+  framing are our own. We reviewed all AI-generated text and revised
+  it substantially.''
+
+  %% Additional acknowledgments (optional):
+  % This work was supported by ...
+\end{acks}
+
+%% ─────────────────────────────────────────────────────────────
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{references}
+%% ─────────────────────────────────────────────────────────────
+
+\end{document}
