@@ -30,9 +30,11 @@
 \usepackage{xcolor}
 \definecolor{workshopaccent}{HTML}{6B2737}
 \usepackage{tikz}
+\usepackage{fontawesome5}
 \newcommand{\sectionrule}{\vspace{0.3em}\noindent\textcolor{workshopaccent}{\rule{\linewidth}{0.4pt}}\vspace{0.3em}}
 \newcommand{\prompt}[1]{\vspace{0.5em}\noindent\textcolor{workshopaccent}{\small\sffamily #1}\vspace{0.3em}}
 \newcommand{\response}{\vspace{0.3em}\noindent\textit{[Your response here.]}\vspace{0.5em}}
+\newcommand{\phaseicon}[1]{\textcolor{workshopaccent}{#1}\enspace}
 
 %% ── Your metadata ─────────────────────────────────────────────
 \title{AI Use Disclosure: [Your Role / Context / Field]}
@@ -98,23 +100,23 @@ general relationship with AI tools.}
 \prompt{For each phase, describe how you use (or avoid) GenAI.
 Skip phases that aren't part of your work.}
 
-\paragraph{Planning \& Literature Review}
+\paragraph{\phaseicon{\faSearch} Planning \& Literature Review}
 \textit{\small Finding papers, summarizing themes, brainstorming questions.}
 \response
 
-\paragraph{Prototyping \& Design}
+\paragraph{\phaseicon{\faPencilRuler} Prototyping \& Design}
 \textit{\small Wireframing, ``vibe coding,'' generating UI copy, assets.}
 \response
 
-\paragraph{Data Collection \& Synthesis}
+\paragraph{\phaseicon{\faDatabase} Data Collection \& Synthesis}
 \textit{\small Interview questions, transcript coding, persona creation.}
 \response
 
-\paragraph{Analysis \& Interpretation}
+\paragraph{\phaseicon{\faChartBar} Analysis \& Interpretation}
 \textit{\small Pattern recognition, quantitative analysis, system development.}
 \response
 
-\paragraph{Dissemination \& Communication}
+\paragraph{\phaseicon{\faBullhorn} Dissemination \& Communication}
 \textit{\small Manuscript drafting, slide creation, reviewer responses.}
 \response
 
@@ -125,27 +127,27 @@ Skip phases that aren't part of your work.}
 \prompt{Answer the questions that feel most relevant.
 You do not need to answer all of them.}
 
-\paragraph{Agency and Originality}
+\paragraph{\phaseicon{\faUserShield} Agency and Originality}
 How do you maintain status as the primary ``arbiter'' of your work?
 Have you noticed shifts in professional identity when using AI?
 \response
 
-\paragraph{Co-Thinking and Delegation}
+\paragraph{\phaseicon{\faHandshake} Co-Thinking and Delegation}
 Which tasks have you delegated to AI, and which have you reclaimed
 for deep, unassisted work? What drove those choices?
 \response
 
-\paragraph{Empathy and Quality Integrity}
+\paragraph{\phaseicon{\faHeart} Empathy and Quality Integrity}
 A specific moment where AI speed felt at odds with depth or care.
 How did you respond?
 \response
 
-\paragraph{Resistance and Re-imagining}
+\paragraph{\phaseicon{\faShieldAlt} Resistance and Re-imagining}
 Have you refused to use AI for ethical or professional reasons?
 What was the situation?
 \response
 
-\paragraph{Professional Policies and Boundaries}
+\paragraph{\phaseicon{\faBalanceScale} Professional Policies and Boundaries}
 How do institutional norms or your own values shape your AI use?
 When do you choose to \textbf{STOP}?
 \response
